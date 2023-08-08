@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: black;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: url('backgroundRegistro.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.cajaPrincipalr{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: slateblue;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(17px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 10px;
+    color: black;
+    text-align: center;
+}
+
+.inputboxr{
+    position: relative;
+    margin: 30px 0;
+    width: 380px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputboxr label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: beige;
+    font-size: 17px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+
+.inputboxr input {
+    width:  100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 35px 0 5px;
+    color: rgb(255, 255, 255);
+}
+
+.inputboxr svg{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.5em;
+    top: 20px;
+}
+
+.condiciones{
+    margin: -15px 0 15px;
+    font: 9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.condiciones label input{
+    margin-right: 3px;
+}
+
+.condiciones label a{
+    color: khaki;
+    text-decoration: none;
+}
+
+.condiciones label a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width:  100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.crear{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.crear p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-link p a:hover{
+    text-decoration: underline;
+}
+
+.regresard{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 120px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: slateblue;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.regresard:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: blueviolet;
+}
+
+.regresard a {
+    color: white;
+    text-decoration: none;
+}
+
+.regresard a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}

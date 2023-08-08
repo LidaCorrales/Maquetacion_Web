@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/lenguajes.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+   <header class="header">
+        <nav class="navegacion">
+            <a href="index.html" class="activo">Home</a>
+            <a href="acceso.html">Iniciar Sesion</a>
+            <a href="registro.html">Registro</a>
+            <a href="reserva.html">Adquirir un libro</a>
+        </nav>
+        <div class="cajaBuscador">
+            <div class="buscador">
+                <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
+                <button><i class='bx bx-search-alt'></i></i></button>
+            </div>
+            <div class="resultados">
+            </div>
+        </div>
+    </header>
+    <!-- Contenedor -->
+    <div class="fondo">
+        <div class="contenedor">
+                <h2 class="logo"><i class='bx bx-book-heart'></i></i></i>Biblioteca virtual</h2>
+                    <div class="text-item">
+                    <h2>Bienvenido!!! :D <br> <br><span>
+                        Página para reservar tus libros favoritos de los mejores autores colombianos
+                    </span></h2>
+                        <p>Aqui encuentras gran cantidad de libros de tu preferencia :3</p>
+                    </div>
+        </div>
+    </div>
+    <script src="autocomplete.js"></script>
+</body>
+</html>

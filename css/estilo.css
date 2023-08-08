@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+}
+
+.fondo{
+    background: url('background1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 13%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+
+.navegacion a{
+    position: relative;
+    font-size: 16px;
+    color: black;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.navegacion a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(204, 40, 95);
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.navegacion a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*buscador*/
+
+.cajaBuscador{
+    width: 320px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.buscador{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.buscador input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+.buscador button{
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.buscador input::placeholder{
+    color: rgb(203, 55, 104);
+}
+.buscador button i{
+    font-size: 22px;
+}
+
+.resultados ul{
+    max-height: 300px;
+    /*overflow: scroll;*/
+    background: floralwhite;
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+
+.resultados ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.resultados ul li:hover{
+    background: palevioletred;
+}
+
+.contenedor{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 450px;
+    margin-top: 45px;
+    background: transparent;
+    border-radius: 20px;
+    border: 5px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+
+.contenedor .logo{
+    color: black;
+    font-size: 35px;
+}
+
+.text-item h2{
+    font-size: 40px;
+    line-height: 1;
+}
+.text-item p{
+    font-size: 16px;
+    margin: 20px 0;
+}
