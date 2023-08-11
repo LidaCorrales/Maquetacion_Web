@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -10,22 +10,21 @@ body {
     box-sizing: border-box;
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-
     background-image: url('backgroundRegistro.jpg');
     background-position: center;
     background-size: cover;
 }
 
-.cajaPrincipalr{
+.cajaPrincipalr {
     position: relative;
     width: 500px;
-    height: 500px;
+    height: 550px;
     background: slateblue;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
@@ -35,17 +34,16 @@ section{
     align-items: center;
 }
 
-h2{
+h2 {
     font-size: 10px;
     color: black;
     text-align: center;
 }
 
-.inputboxr{
+.inputboxr {
     position: relative;
     margin: 30px 0;
     width: 380px;
-    border-bottom: 2px solid #fff;
 }
 
 .inputboxr label {
@@ -59,13 +57,13 @@ h2{
     transition: .5s;
 }
 
-input:focus ~ label,
-input:valid ~ label{
-top: -5px;
+input:focus~label,
+input:valid~label {
+    top: -5px;
 }
 
 .inputboxr input {
-    width:  100%;
+    width: 100%;
     height: 50px;
     background: transparent;
     border: none;
@@ -73,17 +71,24 @@ top: -5px;
     font-size: 15px;
     padding: 0 35px 0 5px;
     color: rgb(255, 255, 255);
+    border-bottom: 2px solid #fff;
 }
 
-.inputboxr svg{
+.inputboxr svg {
     position: absolute;
     right: 8px;
-    color: black;
-    font-size: 1.5em;
+    font-size: 3.5em;
     top: 20px;
 }
 
-.condiciones{
+.texto:valid + .icon  {
+    color: green;
+}
+.texto:invalid + .icon {
+    color: red;
+}
+
+.condiciones {
     margin: -15px 0 15px;
     font: 9em;
     color: #fff;
@@ -91,21 +96,21 @@ top: -5px;
     justify-content: space-between;
 }
 
-.condiciones label input{
+.condiciones label input {
     margin-right: 3px;
 }
 
-.condiciones label a{
+.condiciones label a {
     color: khaki;
     text-decoration: none;
 }
 
-.condiciones label a:hover{
+.condiciones label a:hover {
     text-decoration: underline;
 }
 
-button{
-    width:  100%;
+button {
+    width: 100%;
     height: 40px;
     border-radius: 40px;
     background: #fff;
@@ -116,23 +121,23 @@ button{
     font-weight: 600;
 }
 
-.crear{
+.crear {
     font-size: 15px;
     color: #fff;
     text-align: center;
     margin: 25px 0 10px;
 }
 
-.crear p a{
+.crear p a {
     text-decoration: none;
     color: #fff;
 }
 
-.login-link p a:hover{
+.login-link p a:hover {
     text-decoration: underline;
 }
 
-.regresard{
+.regresard {
     position: fixed;
     top: 50px;
     left: 50px;
@@ -156,7 +161,7 @@ button{
     text-decoration: none;
 }
 
-.regresard a:hover{
+.regresard a:hover {
     color: whitesmoke;
     text-decoration: underline;
 }

@@ -26,7 +26,7 @@ section{
 .cajaPrincipal{
     position: relative;
     width: 400px;
-    height: 450px;
+    height: 500px;
     background: rgb(93, 125, 29);
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
@@ -46,7 +46,6 @@ h2{
     position: relative;
     margin: 30px 0;
     width: 310px;
-    border-bottom: 2px solid #fff;
 }
 
 .inputbox label {
@@ -75,14 +74,21 @@ top: -5px;
     font-size: 15px;
     padding: 0 35px 0 5px;
     color: rgb(255, 255, 255);
+    border-bottom: 2px solid #fff;
 }
 
 .inputbox svg{
     position: absolute;
     right: 8px;
-    color: bisque;
     font-size: 1.2em;
     top: 20px;
+}
+
+.texto:valid + .icon  {
+    color: green;
+}
+.texto:invalid + .icon {
+    color: red;
 }
 
 .recordar{

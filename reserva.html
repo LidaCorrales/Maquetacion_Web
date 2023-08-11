@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validacion</title>
-    <link rel="icon" href="img/lenguajes.png">
     <link rel="stylesheet" href="css/reserva.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -16,107 +15,80 @@
     <div class="regresard">
         <a href="index.html" class="regresar">Regresar</a>
     </div>
-    
-    <main>
-		<form action="" class="formulario" id="formulario">
-			<!-- Grupo: Usuario -->
-			<div class="formulario__grupo" id="grupo__usuario">
-				<label for="usuario" class="formulario__label">Usuario</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
-			</div>
+    <section>
+        <div class="contenedorform">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Tipo de documento</label>
+                    <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Seleccione el tipo de documento</option>
+                <option>Cédula de Ciudadania</option>
+                <option>Tarjeta de identidad</option>
+                <option>Pasaporte de Extranjeria</option>
+            </select>
+                    <div class="invalid-feedback">
+                        Seleccione el tipo de documento
+                    </div>
+                </div>
 
-			<!-- Grupo: Nombre -->
-			<div class="formulario__grupo" id="grupo__nombre">
-				<label for="nombre" class="formulario__label">Nombre</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
-			</div>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Numero de documento</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Numero de documento" required>
+                    <div class="valid-feedback">
+                        ¡Correcto!
+                    </div>
+                </div>
 
-			<!-- Grupo: Contraseña -->
-			<div class="formulario__grupo" id="grupo__password">
-				<label for="password" class="formulario__label">Contraseña</label>
-				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password" id="password">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
-			</div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Usuario</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Escriba su Usuario
+                        </div>
+                    </div>
+                </div>
 
-			<!-- Grupo: Contraseña 2 -->
-			<div class="formulario__grupo" id="grupo__password2">
-				<label for="password2" class="formulario__label">Repetir Contraseña</label>
-				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password2" id="password2">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
-			</div>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="validationCustom01" value="Numero de Documento" required>
+                    <div class="invalid-feedback">
+                        Escriba su telefono
+                    </div>
+                </div>
 
-			<!-- Grupo: Correo Electronico -->
-			<div class="formulario__grupo" id="grupo__correo">
-				<label for="correo" class="formulario__label">Correo Electrónico</label>
-				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-			</div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Libros disponibles</label>
+                    <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Seleccione el libro disponible</option>
+                <option>Cien años de soledad - Gabriel Garcia Marquez</option>
+                <option>Satanas - Mario Mendoza</option>
+                <option>Akelarre - Mario Mendoza</option>
+                <option>El diario del fin del mundo - Mario Mendoza</option>
+            </select>
+                    <div class="invalid-feedback">
+                        Seleccione el libro disponible
+                    </div>
+                </div>
 
-			<!-- Grupo: Teléfono -->
-			<div class="formulario__grupo" id="grupo__telefono">
-				<label for="telefono" class="formulario__label">Teléfono</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-			</div>
-
-            <div class="selectlibro" id="grupo__select">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
-                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                      </svg>
-                </span>
-                <label for="libros" class="formulario_label">Libros disponibles</label>
-                    <select name="select" class="formulario__select" name="libros" id="libros" placeholder="Libros disponibles">
-                        <option>Cien años de soledad - Gabriel Garcia Marquez</option>
-                        <option>Satanas - Mario Mendoza</option>
-                        <option>Akelarre - Mario Mendoza</option>
-                        <option>EL diario del fin del mundo - Mario Mendoza</option>
-                    </select>
-            </div>
-
-			<!-- Grupo: Terminos y Condiciones -->
-			<div class="formulario__grupo" id="grupo__terminos">
-				<label class="formulario__label">
-					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-					Acepto los Terminos y Condiciones
-				</label>
-			</div>
-
-			<div class="formulario__mensaje" id="formulario__mensaje">
-				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-			</div>
-
-			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn">Enviar</button>
-				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-			</div>
-		</form>
-	</main>
-
-	<script src="js/formulario.js"></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                Estoy de acuerdo con los terminos y condiciones
+                </label>
+                        <div class="invalid-feedback">
+                            Debes aceptar los terminos y condiciones
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Validar</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <script>
         (() => {
             'use strict'
@@ -136,4 +108,5 @@
         })()
     </script>
 </body>
+
 </html>
