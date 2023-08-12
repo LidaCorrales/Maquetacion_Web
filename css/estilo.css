@@ -64,7 +64,7 @@ body{
 /*buscador*/
 
 .cajaBuscador{
-    width: 320px;
+    width: 410px;
     height: 50px;
     background-color: transparent;
     border: 2px solid black;
@@ -104,23 +104,42 @@ body{
     font-size: 22px;
 }
 
-.resultados ul{
-    max-height: 300px;
+.buscador.active input {
+    border-radius: 5px 5px 0 0;
+}
+
+
+.buscador .autocomplete {
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-width: 280px;
+    overflow-y: auto;
+    box-shadow: 0 1px 5px black;
+}
+
+.buscador.active .autocomplete {
+    opacity: 1;
+    pointer-events: auto;
+    background-color: #000;
+}
+
+.autocomplete li{
+    list-style: none;
+    display: none;
+    cursor: default;
     /*overflow: scroll;*/
-    background: floralwhite;
+    background: pink;
     border-top: 1px solid #999;
     padding: 15px 10px;
 }
 
-.resultados ul li{
-    list-style: none;
-    border-radius: 3px;
-    padding: 15px 10px;
-    cursor: pointer;
+.buscador.active .autocomplete li {
+    display: block;
 }
 
-.resultados ul li:hover{
-    background: palevioletred;
+.autocomplete li:hover {
+    background-color: palevioletred;
 }
 
 .contenedor{
